@@ -7,7 +7,7 @@ import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Cart() {
-  const cartItems = useSelector((state) => state.products);
+  const cartItems = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
   const removeFromCart = (product) => {
